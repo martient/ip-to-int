@@ -1,0 +1,11 @@
+language: dart
+dart:
+  - stable
+dart_task:
+  - test: --exclude-tags no-xvfb
+    xvfb: false
+script:
+  - pub run test test/ip_to_int_test.dart
+# branches:
+#     only:
+#     - master
