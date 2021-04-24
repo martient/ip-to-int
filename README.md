@@ -1,3 +1,3 @@
 # ip-to-int
 
-Implementation of ip to int for dart
+[![Build Status](https://travis-ci.com/martient/ip-to-int.svg?branch=main)](https://travis-ci.com/martient/ip-to-int)
