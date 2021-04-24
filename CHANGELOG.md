@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.1] - Markdown label
+
+* Switch from travis-ci to github actions
+
 ## [1.0.0] - Ready to deliver '!'
 
 * All pipelines green
