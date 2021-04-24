@@ -1,11 +1,13 @@
 language: dart
 dart:
   - stable
+  - beta
+  - dev
 dart_task:
-  - test: --exclude-tags no-xvfb
-    xvfb: false
-script:
-  - pub run test test/ip_to_int_test.dart
+  - dartfmt
+  - test
+  - dartanalyzer
+
 # branches:
 #     only:
 #     - master
