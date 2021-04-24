@@ -13,12 +13,13 @@ class IpInt {
     if (!regIp.hasMatch(this._ip))
       throw Exception(
           "The ip: $this._ip  dosen't complit with the IPV4 standard");
-    List tmp = this._ip.split('.');
+    List<String> tmp = this._ip.split('.');
     return tmp.asMap().entries.map((entry) {
+      // String value = entry.value;
       return int.parse(entry.value) * pow(256, tmp.length - entry.key - 1);
     }).reduce((prev, curr) {
       return prev + curr;
-    });
+    }).toInt();
   }
 
   String toIp() {
