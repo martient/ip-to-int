@@ -1,6 +1,6 @@
 name: ip_to_int
-description: Import IpInt to Dart
-version: 0.0.4
+description: This package can be used to convert IP address to integer and revert it !
+version: 1.0.0
 homepage: https://github.com/martient/ip-to-int
 
 environment:

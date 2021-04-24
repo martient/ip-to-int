@@ -4,6 +4,8 @@
 
 * All pipelines green
 * Coverage reached 100%
+* Add example
+* Add code documentation
 
 ## [0.0.4] - Analysis
 
