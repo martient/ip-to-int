@@ -1,6 +1,6 @@
 # ip-to-int
 
-[![Build Status](https://travis-ci.com/martient/ip-to-int.svg?branch=main)](https://travis-ci.com/martient/ip-to-int)
+[![Dart](https://github.com/martient/ip-to-int/actions/workflows/dart.yml/badge.svg?branch=main)](https://github.com/martient/ip-to-int/actions/workflows/dart.yml)
 [![codecov](https://codecov.io/gh/martient/ip-to-int/branch/main/graph/badge.svg?token=GZJH4C8TOA)](https://codecov.io/gh/martient/ip-to-int)
 
 ## Usage
