@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [1.0.1] - List of int '!'
+
+* Now we can transform string ip address as list of int
+
 ## [1.0.1] - Markdown label
 
 * Switch from travis-ci to github actions

@@ -43,4 +43,26 @@ class IpInt {
           "This integer can't be proccess by int.parse, please check your value: $this._ip");
     }
   }
+
+  /// Convert string like "127.0.0.1" as List<int> = 127, 0, 0, 1
+  List<int> IpToList() {
+    if (!regIp.hasMatch(this._ip))
+      //The IP address gift to IpInt is incorrect, be sure to use IPV4 format
+      throw Exception(
+          "The ip: $this._ip  dosen't complit with the IPV4 standard");
+
+    List<String> tmp = this._ip.split('.');
+    return tmp.asMap().entries.map((e) => int.parse(e.value)).toList();
+  }
+
+  /// Convert string like "2130706433" as List<int> = 127, 0, 0, 1
+  List<int> IntegerToList() {
+    try {
+      List<String> tmp = this.toIp().split('.');
+      return tmp.asMap().entries.map((e) => int.parse(e.value)).toList();
+    } catch (e) {
+      throw Exception(
+          "The ip: $this._ip  dosen't complit with the IPV4 standard");
+    }
+  }
 }

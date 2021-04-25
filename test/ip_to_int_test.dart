@@ -19,4 +19,25 @@ void main() {
   test("Check ip string with toIp", () {
     expect(() => IpInt("127.0.0.1").toIp(), throwsException);
   });
+
+  test("Convert ip string as List<int>", () {
+    List<int> list = [127, 0, 0, 1];
+    expect(IpInt("127.0.0.1").IpToList(), list);
+  });
+
+  test("Convert integer string as List<int>", () {
+    List<int> list = [127, 0, 0, 1];
+    expect(IpInt("2130706433").IntegerToList(), list);
+  });
+
+  test("Convert ip string as List<int> with 3 value with toInt", () {
+    expect(() => IpInt("127.0.1").IpToList(), throwsException);
+  });
+
+  test("Convert ip string as List<int> with letter with toInt", () {
+    expect(() => IpInt("127.0.a.1").IpToList(), throwsException);
+  });
+  test("Convert integer string as List<int>", () {
+    expect(() => IpInt("127.0.1").IntegerToList(), throwsException);
+  });
 }
